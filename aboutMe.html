@@ -1,0 +1,196 @@
+<!doctype HTML>
+<html  lang="en">
+	<head>
+		<title>Mabs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.min.js"></script>
+		<script>
+		var myCenter=new google.maps.LatLng(51.730189, 0.471305);
+		function initialize()
+		{
+		var mapProp = {
+		  center:myCenter,
+		  zoom:5,
+		  mapTypeId:google.maps.MapTypeId.ROADMAP
+		};
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		var marker=new google.maps.Marker({
+		  position:myCenter,
+		});
+		marker.setMap(map);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>		
+    	$(function() {
+    	$.material.init();
+		});   	
+		</script>
+		<link href="css/dashboard.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.min.css">
+		</head>
+	<body>
+		<div class="top_bar">
+	        <div>
+	            <div class="row">
+	                <div>
+	                    <ul style="margin-top:10px">
+	                        <li>Call&nbsp;&nbsp;<a href="tel:0207 323 0040">020 3327 6350</a></li>	
+	                        <li><a href="contact.html" class="modal_form">Book Appointment</a></li>                        
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	 	</div>	
+		<div style="background-color:white;">
+			<div class="row col-xs-2">				
+					<span style:"">
+						<a href="home.html"><img src="images/logo.png" height="100px"></img></a> 
+					</span>				
+			</div>
+			<div class="row navbar-default">												
+				<nav class="navbar" style="background-color:transparent">
+					<div class="navbar-header">
+      					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>                        
+      					</button>      
+    				</div>
+					<div id="myNavbar" class="collapse navbar-collapse col-xs-8 col-sm-8 col-md-8">
+						<ul class="nav nav-justified">
+				            <!-- <li><img src="images/logo.png"/></li> -->
+				            <li><a href="home.html">Home</a></li>
+				            <li><a href="aboutMe.html">About Me</a></li>
+							<li><a href="expertise.html">Expertise</a></li>
+				            <li><a href="research.html">Research</a></li>
+				            <li><a href="gallery.html">Gallery</a></li>
+							<li><a href="testimonials.html">Testimonials</a></li>
+				            <li class="active"><a href="contact.html">Contact Us</a></li>
+						</ul>	
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div>
+			<div class="row">
+				<div>
+					<article style="overflow: hidden;">
+						<h3 class="text-center text-info">All that you should know </br> about Mr. Alam</h3>
+						</br></br>
+						<div class="col-lg-12 col-md-12 col-sm-12">
+						<p>Mr Alam is a Consultant Orthopaedic Surgeon with a specialist interest in Knee Surgery, Sports Injuries, Hip Surgery and Lower Limb Trauma. He has specialist research interests in Knee Sports Injuries and Knee Replacement Surgery with publications and presentations in leading international journals and meetings, respectively. He has received multiple awards for knee research and is a reviewer for 2 leading international Orthopaedic journals specialising in knee surgery and sports injuries.
+						He reads Medicine at UCL Medical School receiving a prestigious scholarship. He has completed a research degree in the Biomechanics and Bioengineering of the Knee at Imperial College London, receiving several awards.
+						He is passionate about Knee Surgery, Sports Injuries and Hip Surgery. His aim is to deliver great care, which is personalised to each patient and based on the latest evidence and techniques.
+						</p>
+						<h4 class="text-info"> Training </h4>
+						<p>	After gaining BSc (Hon) and MBBS degree’s, Mr Alam’s initial surgical training included the surgical rotation
+
+						at Bart’s and the London, where he developed his passion for Orthopaedics, Knee Surgery and Sports Injuries. 
+
+						He worked at Professorial units at the Royal London and Charing Cross Hospitals. 
+
+						On gaining Membership of the Royal College of Surgeons of England, Mr Alam went on to complete a Master 
+
+						of Surgery (MS) research degree in Biomechanics and Bioengineering at Imperial College London, receiving 
+
+						awards from the Arthritis Research Campaign, the Royal College of Surgeons and the Hammersmith Hospitals 
+
+						Trustees. This research degree involved developing and validating a novel measuring device for diagnosing and 
+
+						monitoring knee ligament injuries, including the ACL, PCL, MCL and LCL & PLC complex. The device is 
+
+						pending patent and continues to be utilised to aid the treatment of knee ligament injuries. During this period Mr 
+
+						Alam published in international journals on topics related to knee injuries, knee diagnosis, computer navigated 
+
+						surgery and total knee replacement biomechanics and bioengineering.
+
+						Mr Alam was then appointed to the NE Thames (RLH) Orthopaedic & Trauma rotation. After being awarded 
+
+						the Fellowship of the Royal College of Surgeons in Orthopaedic & Trauma Surgery in 2012, Mr Alam was 
+
+						appointed to the Specialist Register. He then completed the Knee and Lower Limb Trauma fellowship at 
+
+						University Hospitals Southampton (UHS), having been trained in all aspects of Knee Surgery, particularly 
+
+						complex and revision ACL and multi-ligament surgery, unicompartmental knee resurfacing/replacement and 
+
+						revision knee replacements. The University Hospitals Southampton Knee Unit is the UK centre for the 
+
+						European Knee Fellowship. Mr Alam has also completed visiting fellowships to the USA, UAE, Italy and South 
+
+						Africa.
+
+						Throughout his training, Mr Alam undertook clinical and biomechanical research and has published widely and 
+
+						presented internationally. Topics include:
+
+						Anterior Cruciate Ligament (ACL) Injury, Diagnosis, Monitoring, Surgery & Outcomes
+
+						 Multi-ligament (ACL, MCL, LCL, PCL, PLC) Knee Injury, Surgery & Outcomes
+
+						Total Knee Replacement Design, Surgery, Function & Biomechanics
+
+						Patellar Instability and MPFL Reconstruction
+
+						 Patellar Tendinopathy or Tendinitis (“Jumper’s Knee”)
+
+						Blood Clots (VTE or DVT/PE) following Total Knee and Hip Replacement
+
+						Achilles Tendon Functional Anatomy
+
+
+						Mr Alam is a reviewer for the Bone & Joint Journal and the American Journal of Sports Medicine. He is 
+
+						involved in education outside of Medicine, teaching and mentoring students for GCSE’s and career guidance in 
+
+						Tower Hamlets. He is a keen chess player and continues to play hockey, but has steadily seen his role in his club 
+
+						decline from the 1st team down to the 3rd.
+</p>
+						
+						</div>
+						<div>
+						<img style="width:500px;height:350px;" class="img-responsive" src="images/clinic.png" alt="Mabs" align="right"/>
+						</div>					
+					</article>																	
+				</div>
+			</div>
+		</div>		
+		<div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					<h3 class="page-header text-info">Gallery</h3>
+					<img  src="images/knee.png" alt="Chania" height="80" width="80"/> 
+					<img  src="images/knee.png" alt="Chania" height="80" width="80"/>
+					</br></br>
+					<a class="btn btn-info" role="button" href="gallery.html">View More</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					<h3 class="page-header text-info">Contact Us</h3>
+					<address>Emma Kaye</br>Tel: 020 3327 6350</br>emma@medicaladministration.co.uk
+					</address>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4" >
+					<h3 class="page-header text-info">Find Us</h3>
+					<div id="googleMap" style="width:100%;height:140px;"></div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<footer>
+						<span>Copyright &copy; Mr. Alam</a></span>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

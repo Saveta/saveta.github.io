@@ -1,0 +1,233 @@
+/*
+ * Base structure
+ */
+   body{
+        background: #E6E6E6;
+      }
+      /*body > div:first-child {
+        background-color: #000;
+        font-family: "Arial", Helvetica, sans-serif;
+      }*/
+      body > div:last-child {
+        background-color: #fff;
+        /*box-shadow: 0px 0px 10px 5px #62688D;*/
+        margin: 10px 0 20px;
+      }
+      .row{
+        margin: auto 12%;
+      }
+      span > a{
+        color: #428bca;
+        font-family: Rockwell;
+      }
+      article{
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0px 0px 8px 3px #c2c2c2;
+        background: white;
+      }      
+      header > span {        
+        font-size: 35px;
+        color: black;
+      }
+
+      article > span
+      {
+        color: #9e9e9e;
+        font-family: "Arial", Helvetica, sans-serif;
+        font-size:14px;
+        margin: 0 0 40px 0;
+        line-height: 28px;
+      }
+      header{
+        height: 50px;
+      }      
+      /*.navbar 
+        background-color: transparent;
+      }*/
+      /*.banner{
+        padding: 15px;
+        background-color: white;
+      }*/
+      .navbar-toggle {
+        background-color: #428bca;
+      }
+      /*.carousel img {
+         
+        min-width: 100%;
+
+        
+      }
+      */
+      /*.navbar li a:hover {
+        background-color: white;
+        font-size: 15px;
+        line-height: 20px;        
+      }*/
+      .carousel-inner{
+        background-color:white;
+        height: 300px;
+        min-width: 100%;
+      }
+      
+      .ul
+      {
+        list-style-type: circle;
+      }
+      .top_bar {          
+          width: 100%;
+          background: black;
+          opacity: .90;
+          color: #9e9e9e;
+          /*height: 40px; */     
+      }
+      .top_bar ul {
+          float: right;          
+          color: #fff;
+          font-size: 15px 
+      }
+      .top_bar ul li {
+          display: inline-block;
+      }
+      .top_bar ul li span, .top_bar ul li a {
+          color: #fff;
+          font-size: 15px 
+        }
+      .labels {
+          color: black;
+          background-color: #E0F8F7;
+          font-family: "Lucida Grande", "Arial", sans-serif;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: center;
+          width: 150px;     
+          /*white-space: nowrap;*/
+        }
+      .border{
+        	border:  solid #888;
+        	height:340px;
+        	width:280px;
+        	margin-right:1%;
+        	margin-left:2%;
+        	box-shadow: inset 0px 0px 0px #444, inset 0px 0px 0px #444;
+        }
+        
+        } #menu {
+          text-align: center; 
+        }    
+          .fader {
+          /* Giving equal sizes to each element */
+          width:    250px;
+          height:   170px;
+          margin-left: 35px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          /* Positioning elements in lines */
+          display:  inline-block;
+          
+          /* This is necessary for position:absolute to work as desired */
+          position: relative;
+          
+          /* Preventing zoomed images to grow outside their elements */
+          overflow: hidden;
+        }
+          .fader img {
+            /* Stretching the images to fill whole elements */
+            width:       100%;
+            
+            border:  grey;
+
+        
+            /* Preventing blank space below the image */
+            line-height: 1;
+    
+            /* A one-second transition was to disturbing for me */
+            -webkit-transition: all 0.3s ease;
+            -moz-transition:    all 0.3s ease;
+            -o-transition:      all 0.3s ease;
+            -ms-transition:     all 0.3s ease;
+            transition:         all 0.3s ease; }
+    
+          .fader img:hover {
+                /* Making images appear bigger and transparent on mouseover */
+            opacity: 0.5;
+            /*width:   105%;*/
+            -webkit-transform:scale(1.25); /* Safari and Chrome */
+            -moz-transform:scale(1.25); /* Firefox */
+            -ms-transform:scale(1.25); /* IE 9 */
+            -o-transform:scale(1.25); /* Opera */
+             transform:scale(1.25);            
+        }
+        .fader:hover .text {
+            z-index: 1;
+            font-size: 20px;
+            color: black !important;
+            /*transition: color 1s ease;*/
+            -webkit-animation: mymove 8s;
+            animation :mymove 8s infinite;
+            }    
+          .fader .text {
+            /* Placing text behind images */
+            z-index: -1;             
+            /* Positioning text top-left conrner in the middle of elements */
+            position: absolute;
+             
+          } 
+          @-webkit-keyframes mymove {
+            0%   {top: 0px;}
+            25%  {font-size: 30px;}
+            75%  {top: 50px;font-size: 20px;}
+            100% {top: 100px;}
+          }       
+          .borderHeader{
+          	border:  solid #888;
+          	box-shadow: inset 0px 0px 0px #444, inset 0px 0px 0px #444;
+         }        
+        .hr {	
+        	   box-shadow: 0 0 13px 0 #696868, 0 0 13px 0 #696868;        	
+        }
+        .carousel-indicators li {
+           background-color: #999;
+          background-color: rgba(70,70,70,.25);  
+        }
+        .carousel-indicators .active {
+          background-color: #444;
+        }
+        p, p>ul>li{
+          display:block; 
+          /*padding 20px 20px; */
+          /*border: solid #efefef 1px; */
+          /*box-shadow: 3px 3px 10px #0e0e0e;*/
+          color: #9e9e9e;
+          font-family: "Arial", Helvetica, sans-serif;
+          font-size:14px;
+          margin: 0 0 40px 0;
+          line-height: 28px;
+        }
+       
+        /*p > li
+        {
+          color: #9e9e9e;
+          font-family: "Arial", Helvetica, sans-serif;
+        }*/
+        address{
+          display:block; 
+          padding 10px 10px; 
+          /*border: solid #efefef 1px; */
+          color: #9e9e9e;
+          font-family: "Arial", Helvetica, sans-serif;
+          font-size:14px;
+          margin: 0 0 40px 0;
+          line-height: 28px;
+        }
+        /*.navbar-inverse{
+          border-color: white;
+        }*/
+        /*nav ul li a {
+          text-decoration: none;
+        }*/
+        .navbar-default
+        {
+          background-color: white;
+        }
+        

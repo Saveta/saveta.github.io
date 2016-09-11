@@ -1,0 +1,378 @@
+<!doctype HTML>
+<html  lang="en">
+	<head>
+		<title>Mabs</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.min.js"></script>
+		<script>
+		var myCenter=new google.maps.LatLng(51.730189, 0.471305);
+		function initialize()
+		{
+		var mapProp = {
+		  center:myCenter,
+		  zoom:5,
+		  mapTypeId:google.maps.MapTypeId.ROADMAP
+		};
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		var marker=new google.maps.Marker({
+		  position:myCenter,
+		});
+		marker.setMap(map);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>		
+    	$(function() {
+    	$.material.init();
+		});   	
+		</script>
+		<link href="css/dashboard.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.min.css">
+		</head>
+	<body>
+		<div class="top_bar">
+	        <div >
+	            <div class="row">
+	                <div>
+	                    <ul style="margin-top:10px">
+	                        <li>Call&nbsp;&nbsp;<a href="tel:0207 323 0040">020 3327 6350</a></li>	
+	                        <li><a href="contact.html" class="modal_form">Book Appointment</a></li>                        
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	 	</div>	
+		<div style="background-color:white;">
+			<div class="row col-xs-2">				
+					<span style:"">
+						<a href="home.html"><img src="images/logo.png" height="100px"></img></a> 
+					</span>				
+			</div>
+			<div class="row navbar-default">												
+				<nav class="navbar" style="background-color:transparent">
+					<div class="navbar-header">
+      					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>                        
+      					</button>      
+    				</div>
+					<div id="myNavbar" class="collapse navbar-collapse col-xs-8 col-sm-8 col-md-8">
+						<ul class="nav nav-justified">
+				            <!-- <li><img src="images/logo.png"/></li> -->
+				            <li><a href="home.html">Home</a></li>
+				            <li><a href="aboutMe.html">About Me</a></li>
+							<li class="active"><a href="expertise.html">Expertise</a></li>
+				            <li><a href="research.html">Research</a></li>
+				            <li><a href="gallery.html">Gallery</a></li>
+							<li><a href="testimonials.html">Testimonials</a></li>
+				            <li><a href="contact.html">Contact Us</a></li>
+						</ul>	
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div>
+			<div class="row">
+				<div>
+					<article style="overflow: hidden;">
+						</br></br>
+						<div class="col-lg-12 col-md-12 col-sm-12">
+						<h3 class="text-info text-center"> Expertise </br></br> </h3>
+						<div>
+								<h4 class="text-info">Knee injuries and Surgery</h4>
+																	
+										<a data-toggle="modal" data-target="#myModal">Knee Arthroscopy</a>
+										  <div class="modal fade" id="myModal" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/aclReconstruction.JPG" alt="Chania" width="500"/>
+													<div>
+													  Knee Arthroscopy
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br>
+											 <a data-toggle="modal" data-target="#myModal1">Meniscal Surgery & Meniscal Repair</a>
+												  <div class="modal fade" id="myModal1" role="dialog">
+													    <div class="modal-dialog">											    
+													      <div class="modal-content">											        
+													        <div class="modal-body">
+													          <img  src="images/meniscus.JPG" alt="Chania" width="500"/>
+															<div>
+															  Meniscal Surgery & Meniscal Repair
+															</div>
+													        </div>
+													        <div class="modal-footer">
+													          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+													        </div>
+													      </div>											      
+													    </div>
+											 		</div></br>
+										<a data-toggle="modal" data-target="#myModal3">Cartilage Surgery</a>
+												  <div class="modal fade" id="myModal3" role="dialog">
+													    <div class="modal-dialog">											    
+													      <div class="modal-content">											        
+													        <div class="modal-body">
+													          <img  src="images/meniscus.JPG" alt="Chania" width="500"/>
+															<div>
+															  Cartilage Surgery
+															</div>
+													        </div>
+													        <div class="modal-footer">
+													          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+													        </div>
+													      </div>											      
+													    </div>
+											 		</div></br>
+											 		<a data-toggle="modal" data-target="#myModal4">Arthroscopic ACL Reconstruction</a>
+												  <div class="modal fade" id="myModal4" role="dialog">
+													    <div class="modal-dialog">											    
+													      <div class="modal-content">											        
+													        <div class="modal-body">
+													          <img  src="images/aclReconstruction.JPG" alt="Chania" width="500"/>
+															<div>
+															  Arthroscopic ACL Reconstruction
+															</div>
+													        </div>
+													        <div class="modal-footer">
+													          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+													        </div>
+													      </div>											      
+													    </div>
+											 		</div></br>
+											<a data-toggle="modal" data-target="#myModal5">MCL, LCL, ALL, PLC, PCL Reconstruction</a>
+												  <div class="modal fade" id="myModal5" role="dialog">
+													    <div class="modal-dialog">											    
+													      <div class="modal-content">											        
+													        <div class="modal-body">
+													          <img  src="images/multiACL.JPG" alt="Chania" width="500"/>
+															<div>
+															  MCL, LCL, ALL, PLC, PCL Reconstruction
+															</div>
+													        </div>
+													        <div class="modal-footer">
+													          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+													        </div>
+													      </div>											      
+													    </div>
+											 		</div>
+								
+						</div>
+						<div >
+								<h4 class="text-info">Knee Replacement</h4>
+								<a data-toggle="modal" data-target="#myModal6">Partial (Unicompartmental) Knee Replacement (Medial, Lateral or Patella-femoral)</a>
+										  <div class="modal fade" id="myModal6" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/kneeReplacement.JPG" alt="Chania" width="500"/>
+													<div>
+													  Partial (Unicompartmental) Knee Replacement (Medial, Lateral or Patella-femoral)
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br>
+								<a data-toggle="modal" data-target="#myModal7">Total Knee Replacement</a>
+										  <div class="modal fade" id="myModal7" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/medial.JPG" alt="Chania" width="500"/>
+													<div>
+													  Total Knee Replacement
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br>
+								<a data-toggle="modal" data-target="#myModal8">Revision Total Knee Replacement</a>
+										  <div class="modal fade" id="myModal8" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/revisionKnee.JPG" alt="Chania" width="500"/>
+													<div>
+													 	Revision Total Knee Replacement
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br>
+								<a data-toggle="modal" data-target="#myModal9">High Tibial Osteotomy</a>
+										  <div class="modal fade" id="myModal9" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/oa.JPG" alt="Chania" width="500"/>
+													<div>
+													 	High Tibial Osteotomy
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br>
+								
+						</div>
+						
+						<div>								 
+								<h4 class="text-info">Sports Injuries and Surgery</h4>
+								<a data-toggle="modal" data-target="#myModal10">Platelet Rich Plasma (PRP) Injections</a>
+										  <div class="modal fade" id="myModal10" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/oa.JPG" alt="Chania" width="500"/>
+													<div>
+													 	Platelet Rich Plasma (PRP) Injections
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br>
+								<a data-toggle="modal" data-target="#myModal11">Achilles Tendon Injuries</a>
+										  <div class="modal fade" id="myModal11" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/oa.JPG" alt="Chania" width="500"/>
+													<div>
+													 	Achilles Tendon Injuries
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br>
+								<a data-toggle="modal" data-target="#myModal12">Hamstring Injuries, Groin and Hip Injuries</a>
+										  <div class="modal fade" id="myModal12" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/oa.JPG" alt="Chania" width="500"/>
+													<div>
+													 	Hamstring Injuries, Groin and Hip Injuries
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br>
+								<a data-toggle="modal" data-target="#myModal13">Foot & Ankle Injuries</a>
+										  <div class="modal fade" id="myModal13" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/oa.JPG" alt="Chania" width="500"/>
+													<div>
+													 	Foot & Ankle Injuries
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br>
+						</div>
+						<div>
+								<h4 class="text-info">Hip Surgery</h4>
+								<a data-toggle="modal" data-target="#myModal14">Total Hip Replacement</a>
+										  <div class="modal fade" id="myModal14" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/oa.JPG" alt="Chania" width="500"/>
+													<div>
+													 	Total Hip Replacement
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br>
+								<a data-toggle="modal" data-target="#myModal15">Short Hip Replacement</a>
+										  <div class="modal fade" id="myModal15" role="dialog">
+											    <div class="modal-dialog">											    
+											      <div class="modal-content">											        
+											        <div class="modal-body">
+											          <img  src="images/oa.JPG" alt="Chania" width="500"/>
+													<div>
+													 	Short Hip Replacement
+													</div>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+											        </div>
+											      </div>											      
+											    </div>
+											 </div></br></br></br>
+						</div>
+					</div>					
+					</article>																	
+				</div>
+			</div>
+		</div>		
+		<div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					<h3 class="page-header text-info">Gallery</h3>
+					<img  src="images/knee.png" alt="Chania" height="80" width="80"/> 
+					<img  src="images/knee.png" alt="Chania" height="80" width="80"/>
+					</br></br>
+					<a class="btn btn-info" role="button" href="gallery.html">View More</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					<h3 class="page-header text-info">Contact Us</h3>
+					<address>Emma Kaye</br>Tel: 020 3327 6350</br>emma@medicaladministration.co.uk
+					</address>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4" >
+					<h3 class="page-header text-info">Find Us</h3>
+					<div id="googleMap" style="width:100%;height:140px;"></div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<footer>
+						<span>Copyright &copy; Mr. Alam</a></span>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

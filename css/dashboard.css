@@ -117,7 +117,7 @@
         }    
           .fader {
           /* Giving equal sizes to each element */
-          width:    250px;
+          width:    300px;
           height:   170px;
           margin-left: 35px;
           margin-top: 20px;
@@ -135,7 +135,7 @@
             /* Stretching the images to fill whole elements */
             width:       100%;
             
-            border:  grey;
+            border:  blue;
 
         
             /* Preventing blank space below the image */
@@ -159,12 +159,12 @@
              transform:scale(1.25);            
         }
         .fader:hover .text {
-            z-index: 1;
-            font-size: 20px;
+            z-index: 0;
+            font-size: 2px;
             color: black !important;
             /*transition: color 1s ease;*/
-            -webkit-animation: mymove 8s;
-            animation :mymove 8s infinite;
+            -webkit-animation: mymove 10s;
+            animation :mymove 10s infinite;
             }    
           .fader .text {
             /* Placing text behind images */
@@ -220,6 +220,7 @@
           margin: 0 0 40px 0;
           line-height: 28px;
         }
+        
         /*.navbar-inverse{
           border-color: white;
         }*/

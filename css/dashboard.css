@@ -173,6 +173,11 @@
             position: absolute;
              
           } 
+           .fader video {
+            /* Stretching the images to fill whole elements */
+            width:       100%;
+           
+         }            
           @-webkit-keyframes mymove {
             0%   {top: 0px;}
             25%  {font-size: 30px;}
